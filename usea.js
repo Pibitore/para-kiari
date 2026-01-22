@@ -1,7 +1,23 @@
-onload = () => {
-    const c = setTimeout(() => {
-      document.body.classList.remove("not-loaded");
-      clearTimeout(c);
-    }, 1000);
-  };
-  alert( "Kiari, amor mío: Dicen que algunas flores tardan en florecer, que necesitan tiempo, paciencia y cuidado. Así es la amarilis: no se apura, no se rinde, espera los tres meses exactos para mostrarse hermosa. Y de alguna forma, nuestro amor se parece mucho a eso. Tal vez estemos un poco locos, pero bendita locura la de elegirnos; la de querer besarte incluso en tus días cansados, la de querer abrazarte sin importar el ruido del mundo, la de querer salir a buscarte aunque sea solo por cinco minutos más a tu lado. A veces pienso en cómo el destino escribe sin avisar y, entre tantas páginas en blanco, decidió ponerte a vos en mi historia. No como alguien pasajero, sino como el capítulo que quiero leer todos los días, el que le da sentido incluso a los días grises. Yo besaría lo que llamás defectos, te abrazaría aun bajo la lluvia y preferiría mojarme de lágrimas antes que verte llorar sola. Porque amarte no es huir, es quedarse, es elegirte incluso cuando no todo es perfecto. Gracias por ser mi destino, mi alegría y mi hogar, por llenar mi vida de pequeños detalles que se sienten eternos. Si estos tres meses son solo el comienzo, entonces quiero seguir floreciendo con vos, una y otra vez. Te amo, Kiari")
+window.onload = () => {
+  setTimeout(() => {
+    // Activar animaciones
+    document.body.classList.remove("not-loaded");
+
+    // Mensaje romántico
+    const msg = document.createElement("div");
+    msg.className = "love-message";
+    msg.innerText =
+      "Kiari, amor mío:\n\n" +
+      "Dicen que algunas flores tardan en florecer,\n" +
+      "que necesitan tiempo, paciencia y cuidado.\n" +
+      "Así es la amarilis.\n\n" +
+      "Nuestro amor se parece a eso:\n" +
+      "no se apura, no se rinde,\n" +
+      "elige quedarse.\n\n" +
+      "Si estos meses son solo el comienzo,\n" +
+      "quiero seguir floreciendo con vos.\n\n" +
+      "Te amo 💖";
+
+    document.body.appendChild(msg);
+  }, 1000);
+};
